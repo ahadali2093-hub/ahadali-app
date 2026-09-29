@@ -6,7 +6,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 
 import Home from './pagers/Home';
 import About from './pagers/About';
-import FuelPrices from './pagers/Fuelprice';
+import FuelPrices from './pagers/FuelPrice';
 import Stations from './pagers/Stations';
 import Services from './pagers/Services';
 import News from './pagers/News';

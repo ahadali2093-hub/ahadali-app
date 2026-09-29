@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "mongodb://localhost:27017",
+    origin: "http://localhost:5173",
   })
 );
 
