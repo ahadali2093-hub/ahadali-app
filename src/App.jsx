@@ -6,7 +6,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 
 import Home from './pagers/Home';
 import About from './pagers/About';
-import FuelPrices from './pagers/FuelPrice';
+import FuelPrices from './pagers/FuelPrices';
 import Stations from './pagers/Stations';
 import Services from './pagers/Services';
 import News from './pagers/News';
@@ -16,54 +16,54 @@ import AdminLogin from './pagers/AdminLogin';
 import AdminDashboard from './pagers/AdminDashboard';
 
 function App() {
-  return (
-    <>
-      <Navbar />
+return (
+<>
+<Navbar />
 
-      <main>
-        <Routes>
+<main>
+<Routes>
 
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route
-            path="/fuel-prices"
-            element={<FuelPrices />}
-          />
-          <Route
-            path="/stations"
-            element={<Stations />}
-          />
-          <Route
-            path="/services"
-            element={<Services />}
-          />
-          <Route
-            path="/news"
-            element={<News />}
-          />
-          <Route
-            path="/contact"
-            element={<Contact />}
-          />
+<Route path="/" element={<Home />} />
+<Route path="/about" element={<About />} />
+<Route
+path="/fuel-prices"
+element={<FuelPrices />}
+/>
+<Route
+path="/stations"
+element={<Stations />}
+/>
+<Route
+path="/services"
+element={<Services />}
+/>
+<Route
+path="/news"
+element={<News />}
+/>
+<Route
+path="/contact"
+element={<Contact />}
+/>
 
-          <Route
-            path="/admin/login"
-            element={<AdminLogin />}
-          />
+<Route
+path="/admin/login"
+element={<AdminLogin />}
+/>
 
-          <Route
-            path="/admin"
-            element={ <ProtectedRoute>
-                <AdminDashboard />
-              </ProtectedRoute>}
-          />
+<Route
+path="/admin"
+element={ <ProtectedRoute>
+<AdminDashboard />
+</ProtectedRoute>}
+/>
 
-        </Routes>
-      </main>
+</Routes>
+</main>
 
-      <Footer />
-    </>
-  );
+<Footer />
+</>
+);
 }
 
 export default App;
