@@ -60,7 +60,7 @@ function Contact() {
             <span>📞</span>
             <div>
               <h3>Phone</h3>
-              <p>+92 300 1234567</p>
+              <p>+92 315 3644159</p>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ function Contact() {
             <span>✉</span>
             <div>
               <h3>Email</h3>
-              <p>info@petropak.com</p>
+              <p>maherahad49@gmail.com</p>
             </div>
           </div>
 
