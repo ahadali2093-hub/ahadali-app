@@ -8,7 +8,7 @@ function News() {
   useEffect(() => {
     const getNews = async () => {
       try {
-        const response = await API.get("/news");
+        const response = await API.get("/api/news");
         setNews(response.data);
       } catch (error) {
         console.log(error);

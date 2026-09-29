@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../api";
+import API from "./api";
 
 function FuelPrices() {
   const [fuels, setFuels] = useState([]);
@@ -8,7 +8,7 @@ function FuelPrices() {
   useEffect(() => {
     const getFuels = async () => {
       try {
-        const response = await API.get("/fuels");
+        const response = await API.get("/api/fuels");
 
         setFuels(response.data);
       } catch (error) {

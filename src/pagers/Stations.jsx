@@ -7,7 +7,7 @@ function Stations() {
 
   const loadData = async () => {
     try {
-      const response = await API.get("/stations");
+      const response = await API.get("/api/stations");
       setStations(response.data);
     } catch (error) {
       console.log(error);
